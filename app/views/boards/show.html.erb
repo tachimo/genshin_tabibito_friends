@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @board %>
+
+<div>
+  <%= link_to "Edit this board", edit_board_path(@board) %> |
+  <%= link_to "Back to boards", boards_path %>
+
+  <%= link_to "Destroy this board", @board, data: { turbo_method: :delete, turbo_confirm: '削除しますか?'} %>
+</div>
